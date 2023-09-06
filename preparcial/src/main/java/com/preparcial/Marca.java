@@ -6,6 +6,10 @@ public class Marca {
     public String email;
 
     public Marca(String name, String web, String email){
+        assert name != null;
+        assert web != null;
+        assert email != null;
+        
         this.name = name;
         this.email = email;
         this.web = web;

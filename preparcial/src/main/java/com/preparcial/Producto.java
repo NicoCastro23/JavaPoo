@@ -9,6 +9,12 @@ public class Producto {
     public TipoProducto tipoProducto;
 
     public Producto(String name, LocalDate fechaVencimiento, int precio, Marca marca, TipoProducto tipoProducto){
+        assert name != null;
+        assert fechaVencimiento != null;
+        assert marca != null;
+        assert tipoProducto != null;
+        assert precio >= 0;
+        
         this.name = name;
         this.fechaVencimiento = fechaVencimiento;
         this.precio = precio;
