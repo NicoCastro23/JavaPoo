@@ -1,0 +1,28 @@
+package com.preparcial;
+import java.time.LocalDate;
+
+public class Producto {
+    private String name;
+    private LocalDate fechaVencimiento;
+    private int precio;
+    
+    public Producto(String name, LocalDate fechaVencimiento, int precio, Marca marca, TipoProducto tipoProducto){
+        this.name = name;
+        this.fechaVencimiento = fechaVencimiento;
+        this.precio = precio;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getFechaVencimiento() {
+        return fechaVencimiento;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+    
+}
+
