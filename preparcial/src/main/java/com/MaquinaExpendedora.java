@@ -28,4 +28,9 @@ public class MaquinaExpendedora {
         this.valorPagado = valorPagado;
     }
     
+    public int getDevuelta(){
+        int valor;
+        valor =valorPagado - valorPagar;
+        return valor;
+    }
 }

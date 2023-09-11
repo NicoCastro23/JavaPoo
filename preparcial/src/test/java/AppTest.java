@@ -28,6 +28,7 @@ public class AppTest {
         MaquinaExpendedora maquinaExpendedora = new MaquinaExpendedora(1500, 1000);
         assertEquals(1000, maquinaExpendedora.getValorPagar());
         assertEquals(1500, maquinaExpendedora.getValorPagado());
+        assertEquals(500, maquinaExpendedora.getDevuelta());
         LOG.info("Finalizando test Datos correctos.....");
         
     }
